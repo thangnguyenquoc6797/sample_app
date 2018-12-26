@@ -3,15 +3,16 @@ class User < ApplicationRecord
   before_save{email.downcase!}
 
   validates :name, presence: true,
-    length: {maximum: Settings.app.models.user.namevalidateslength}
+    length: {maximum: Settings.app.models.user.name_validates_length}
   VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-]+(\.[a-z\d\-]+)*\.[a-z]+\z/i
   validates :email, presence: true,
-    length: {maximum: Settings.app.models.user.emailvalidateslength},
+    length: {maximum: Settings.app.models.user.email_validates_length},
     format: {with: VALID_EMAIL_REGEX},
     uniqueness: {case_sensitive: false}
   has_secure_password
   validates :password, presence: true,
-    length: {minimum: Settings.app.models.user.passwordvalidatelength}
+    length: {minimum: Settings.app.models.user.password_validate_length},
+    allow_nil: true
 
   class << self
     # Returns the hash digest of the given string.

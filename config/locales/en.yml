@@ -64,8 +64,18 @@ en:
     new:
       title: "Sign up"
       content: "This will be a signup page for new users."
-      createacc: "Create my account"
+      create_account: "Create my account"
       confirm: "Confirmation"
+    edit:
+      title: "Edit user"
+      update: "Update your profile"
+      confirm: "Confirmation"
+      save: "Save changes"
+    index:
+      title: "All users"
+    _user:
+      confirm: "You sure?"
+      delete: "delete"
   layouts:
     _footer:
       author: "The <a href='http://www.railstutorial.org/'>Ruby on Rails Tutorial</a>
@@ -91,7 +101,11 @@ en:
   controllers:
     users_controller:
       welcome: "Welcome to the Sample App!"
-      usernotfound: "User not found!"
+      user_notfound: "User not found!"
+      updated: "Profile updated"
+      errorlogin: "Please log in."
+      deleted_success: "User deleted"
+      deleted_unsuccess: "The user not delete"
     sessions_controller:
       danger: "Invalid email/password combination"
   shared:

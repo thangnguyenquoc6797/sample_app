@@ -1,17 +1,22 @@
 app:
   models:
     user:
-      namevalidateslength: 50
-      emailvalidateslength: 255
-      passwordvalidatelength: 6
+      name_validates_length: 50
+      email_validates_length: 255
+      password_validate_length: 6
   helpers:
     users_helper:
-      sizeofgravatar: 80
+      size_gravatar: 80
   controllers:
     sessions_controller:
       remember_1: "1"
       remember_0: "0"
+    users_controller:
+      perpage: 10
   integration:
     users_login_test:
       remember_1: "1"
       remember_0: "0"
+  users:
+    _user:
+      size_gravatar: 50
