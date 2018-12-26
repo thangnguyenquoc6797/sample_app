@@ -78,10 +78,21 @@ en:
       help: "Help"
       login: "Login"
       samapp: "sample app"
+      user: "Users"
+      profile: "Profile"
+      setting: "Settings"
+      logout: "Log out"
+      account: "Account"
+  sessions:
+    new:
+      title: "Log in"
+      signup: "Sign up now!"
   controllers:
     users_controller:
       welcome: "Welcome to the Sample App!"
       usernotfound: "User not found!"
+    sessions_controller:
+      danger: "Invalid email/password combination"
   shared:
     _error_messages:
       formcontains: "The form contains"
