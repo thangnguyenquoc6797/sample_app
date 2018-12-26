@@ -64,6 +64,8 @@ en:
     new:
       title: "Sign up"
       content: "This will be a signup page for new users."
+      createacc: "Create my account"
+      confirm: "Confirmation"
   layouts:
     _footer:
       author: "The <a href='http://www.railstutorial.org/'>Ruby on Rails Tutorial</a>
@@ -76,3 +78,10 @@ en:
       help: "Help"
       login: "Login"
       samapp: "sample app"
+  controllers:
+    users_controller:
+      welcome: "Welcome to the Sample App!"
+      usernotfound: "User not found!"
+  shared:
+    _error_messages:
+      formcontains: "The form contains"

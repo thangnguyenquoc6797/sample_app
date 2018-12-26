@@ -4,3 +4,6 @@ app:
       namevalidateslength: 50
       emailvalidateslength: 255
       passwordvalidatelength: 6
+  helpers:
+    users_helper:
+      sizeofgravatar: 80
