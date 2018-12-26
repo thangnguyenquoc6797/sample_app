@@ -66,6 +66,15 @@ en:
       content: "This will be a signup page for new users."
       createacc: "Create my account"
       confirm: "Confirmation"
+    edit:
+      title: "Edit user"
+      update: "Update your profile"
+      confirm: "Confirmation"
+      save: "Save changes"
+    index:
+      title: "All users"
+    _user:
+      confirm: "You sure?"
   layouts:
     _footer:
       author: "The <a href='http://www.railstutorial.org/'>Ruby on Rails Tutorial</a>
@@ -88,12 +97,50 @@ en:
       title: "Log in"
       signup: "Sign up now!"
       rememberme: "Remember me on this computer"
+      forgotpass: "(forgot password)"
   controllers:
     users_controller:
       welcome: "Welcome to the Sample App!"
       usernotfound: "User not found!"
+      updated: "Profile updated"
+      errorlogin: "Please log in."
+      deletedsuccess: "User deleted"
+      checkemail: "Please check your email to activate your account."
     sessions_controller:
       danger: "Invalid email/password combination"
+      notactivated: "Account not activated. Check your email for the activation link."
+    account_activations_controller:
+      activated: "Account activated!"
+      notactivated: "Invalid activation link"
+    password_resets_controller:
+      rightemail: "Email sent with password reset instructions"
+      wrongemail: "Email address not found"
+      emptypass: "can't be empty"
+      resetpass: "Password has been reset."
+      expiredpass: "Password reset has expired."
   shared:
     _error_messages:
       formcontains: "The form contains"
+  user_mailer:
+    account_activation:
+      samapp: "Sample App"
+      hi: "Hi"
+      content: "Welcome to the Sample App! Click on the link below to activate your account:"
+      activate: "Activate"
+    password_reset:
+      reset_password: "Password reset"
+      passwordreset_link: "To reset your password click the link below:"
+      content: "This link will expire in two hours.
+        If you did not request your password to be reset, please ignore this email and
+        your password will stay as it is."
+  password_resets:
+    new:
+      title: "Forgot password"
+      submit: "Submit"
+    edit:
+      updatepass: "Update password"
+      confirm: "Confirmation"
+  mailers:
+    user_mailer:
+      account_activation: "Account activation"
+      reset_password: "Password reset"
