@@ -36,9 +36,11 @@ en:
   static_pages:
     home:
       title: "Home"
-      samapp: "Sample App"
+      samapp: "Welcome to the Sample App"
       content: "This is the home page for the <a href='http://www.railstutorial.org/''>
       Ruby on Rails Tutorial</a> sample application."
+      signup: "Sign up now!"
+      raillogo: "Rails logo"
     help:
       title: "Help"
       content: "Get help on the Ruby on Rails Tutorial at the
@@ -58,3 +60,19 @@ en:
       to teach web development with
       <a href='http://rubyonrails.org/'>Ruby on Rails</a>.
       This is the sample application for the tutorial."
+  users:
+    new:
+      title: "Sign up"
+      content: "This will be a signup page for new users."
+  layouts:
+    _footer:
+      author: "The <a href='http://www.railstutorial.org/'>Ruby on Rails Tutorial</a>
+      by <a href='http://www.michaelhartl.com/'>Michael Hartl</a>"
+      news: "<a href='http://news.railstutorial.org/'>News</a>"
+      about: "About"
+      contact: "Contact"
+    _header:
+      home: "Home"
+      help: "Help"
+      login: "Login"
+      samapp: "sample app"
