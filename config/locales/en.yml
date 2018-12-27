@@ -30,7 +30,9 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  rubyonrails: "Ruby on Rails Tutorial Sample App"
+  helpers:
+    application_helper:
+      basetitle: "Ruby on Rails Tutorial Sample App"
   static_pages:
     home:
       title: "Home"
