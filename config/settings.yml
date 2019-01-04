@@ -1,0 +1,6 @@
+app:
+  models:
+    user:
+      namevalidateslength: 50
+      emailvalidateslength: 255
+      passwordvalidatelength: 6
