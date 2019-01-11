@@ -7,3 +7,11 @@ app:
   helpers:
     users_helper:
       sizeofgravatar: 80
+  controllers:
+    sessions_controller:
+      remember_1: "1"
+      remember_0: "0"
+  integration:
+    users_login_test:
+      remember_1: "1"
+      remember_0: "0"

@@ -87,6 +87,7 @@ en:
     new:
       title: "Log in"
       signup: "Sign up now!"
+      rememberme: "Remember me on this computer"
   controllers:
     users_controller:
       welcome: "Welcome to the Sample App!"
